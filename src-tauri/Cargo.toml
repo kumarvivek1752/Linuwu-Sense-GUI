@@ -1,0 +1,29 @@
+[package]
+name = "linuwu-sense-gui"
+version = "1.0.0"
+description = "PredetorSense alternative for linux"
+authors = ["kumarvivek1752@gmail.com"]
+license = "linuwu-sense-gui"
+repository = "https://github.com/kumarvivek1752/Linuwu-Sense-GUI"
+default-run = "linuwu-sense-gui"
+edition = "2021"
+rust-version = "1.84"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.0.0", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.0.0", features = ["shell-open"] }
+
+[features]
+# by default Tauri runs in production mode
+# when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
+default = [ "custom-protocol" ]
+# this feature is used used for production builds where `devPath` points to the filesystem
+# DO NOT remove this
+custom-protocol = [ "tauri/custom-protocol" ]
+

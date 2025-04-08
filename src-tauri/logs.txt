@@ -1,0 +1,31 @@
+   ▲ Next.js 15.1.6
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8) 
+   Generating static pages (4/8) 
+   Generating static pages (6/8) 
+ ✓ Generating static pages (8/8)
+   Finalizing page optimization ...
+   Collecting build traces ...
+   Exporting (0/3) ...
+ ✓ Exporting (3/3)
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    289 B           106 kB
+├ ○ /_not-found                          979 B           106 kB
+├ ○ /dashboard                           189 B           157 kB
+├ ○ /dashboard/fan                       12.3 kB         133 kB
+└ ○ /dashboard/keyboard                  10.6 kB         126 kB
++ First Load JS shared by all            105 kB
+  ├ chunks/4bd1b696-9dfee55aa6e90028.js  52.9 kB
+  ├ chunks/517-be1d814a20708220.js       50.5 kB
+  └ other shared chunks (total)          1.91 kB
+
+
+○  (Static)  prerendered as static content
+
+Error running CLI: failed to bundle project: error running appimage.sh: error running appimage.sh: `failed to run /home/vivek/personal/Linuwu-Sense-Gui/linuwu-sense-gui/src-tauri/target/release/bundle/appimage/build_appimage.sh`
