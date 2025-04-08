@@ -23,7 +23,8 @@ rm linuwu-sense-gui_0.1.0_amd64.AppImage
 
 # Example Usage
 
-Demo Video
+https://github.com/user-attachments/assets/61a42654-7a8c-4a86-9b93-1d488b54e6fb
+
 
 ---
 
