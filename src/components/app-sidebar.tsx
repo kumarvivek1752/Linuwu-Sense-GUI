@@ -58,7 +58,7 @@ const data = {
     },
     {
       title: "Boot Animation Sound",
-      url: "#",
+      url: "/dashboard/boot-animation-sound",
       icon: PowerSquareIcon,
     },
     {
