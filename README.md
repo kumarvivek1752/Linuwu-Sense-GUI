@@ -4,11 +4,10 @@ GUI of Unofficial kernel Module [Linuwu-Sense](https://github.com/0x7375646F/Lin
 
 ## 🚀 Installation
 
-Download AppImage and run as sudo:
+Download AppImage and run :
 
 ```bash
-xhost +SI:localuser:root
-sudo -E ./linuwu-sense-gui_1.0.0_amd64.AppImage
+./linuwu-sense-gui_1.0.1_amd64.AppImage
 ```
 
 ## To Uninstall:
@@ -16,7 +15,7 @@ sudo -E ./linuwu-sense-gui_1.0.0_amd64.AppImage
 Delete the AppImage
 
 ```bash
-rm linuwu-sense-gui_0.1.0_amd64.AppImage
+rm linuwu-sense-gui_1.0.1_amd64.AppImage
 ```
 
 ## 🛠️ Usage
@@ -25,24 +24,24 @@ rm linuwu-sense-gui_0.1.0_amd64.AppImage
 
 https://github.com/user-attachments/assets/61a42654-7a8c-4a86-9b93-1d488b54e6fb
 
-
 ---
 
 ## Note
 
-- Currently only supported for Predator Laptops.
-- I'm actively developing this project support for Nitro Laptops and more features will be add very soon.
+- Added support for Nitro Laptops (Not tested).
+- I'm actively developing this project more features will be add very soon.
 
 ## 🛠️ Features:
 
 - [x] Keyboard RGB Control ⌨
 - [x] Fan Speed 🌬️
-- [ ] Backlight Timeout ⏰
-- [ ] Battery Calibration 🔋
-- [ ] Battery Limiter ⚡
-- [ ] LCD Override 🖥️
+- [x] Backlight Timeout ⏰
+- [x] Battery Calibration 🔋
+- [x] Battery Limiter ⚡
+- [x] LCD Override 🖥️
+- [x] Boot Animation Sound 🔊
 - [ ] USB Charging ⚡
-- [ ] Auto Install Kernal
+- [ ] Auto Install Kernal if not already installed
 
 ## License
 
