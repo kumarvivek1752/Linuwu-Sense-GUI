@@ -68,7 +68,7 @@ const data = {
     },
     {
       title: "USB Charging",
-      url: "#",
+      url: "/dashboard/usb-charging",
       icon: PlugZapIcon,
     },
     {
