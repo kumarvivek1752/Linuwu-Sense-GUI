@@ -63,7 +63,7 @@ const data = {
     },
     {
       title: "LCD Override",
-      url: "#",
+      url: "/dashboard/lcd-override",
       icon: MonitorIcon,
     },
     {
