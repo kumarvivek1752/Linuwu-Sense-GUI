@@ -63,14 +63,11 @@ export default function KeyboardControl() {
     const fetchColor = async () => {
       try {
         const result = await invoke<string>("get_keybord_color_perzone");
-        console.log(result);
         setZone1("#" + result[0]);
         setZone2("#" + result[1]);
         setZone3("#" + result[2]);
         setZone4("#" + result[3]);
         setColor("#" + result[0]);
-
-        console.log("zone one color : ", zone1);
       } catch (error) {
         console.error("Error getting keyboard_color:", error);
       }

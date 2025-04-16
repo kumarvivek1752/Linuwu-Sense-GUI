@@ -1,6 +1,6 @@
 [package]
 name = "linuwu-sense-gui"
-version = "1.0.0"
+version = "1.0.1"
 description = "PredetorSense alternative for linux"
 authors = ["kumarvivek1752@gmail.com"]
 license = "linuwu-sense-gui"
@@ -12,7 +12,7 @@ rust-version = "1.84"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.0.0", features = [] }
+tauri-build = { version = "1.0.1", features = [] }
 
 [dependencies]
 serde_json = "1.0"

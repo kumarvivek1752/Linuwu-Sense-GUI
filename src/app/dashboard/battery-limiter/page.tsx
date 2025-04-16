@@ -11,11 +11,7 @@ import { invoke } from "@tauri-apps/api/tauri";
 import { RadioGroup } from "@/components/ui/radio-group";
 import { Button } from "@/components/ui/button";
 
-import {
-  BatteryFullIcon,
-  BatteryLowIcon,
-  BatteryMediumIcon,
-} from "lucide-react";
+import { BatteryFullIcon, BatteryMediumIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 
 function debounce<T extends (...args: string[]) => void>(
