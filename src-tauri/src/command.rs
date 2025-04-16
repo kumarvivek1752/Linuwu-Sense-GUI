@@ -39,7 +39,7 @@ pub fn keyboard_color(zone1: &str, zone2: &str, zone3: &str, zone4: &str) -> Str
 }
 
 #[tauri::command]
-pub fn get_keybord_perzone() -> Result<(String, String, String, String, u8), String> {
+pub fn get_keybord_color_perzone() -> Result<(String, String, String, String, u8), String> {
     let output = Command::new("sh")
         .arg("-c")
         .arg("cat /sys/module/linuwu_sense/drivers/platform:acer-wmi/acer-wmi/four_zoned_kb/per_zone_mode")

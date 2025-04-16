@@ -6,7 +6,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { KeyboardIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function debounce<T extends (...args: string[]) => void>(
   func: T,
@@ -59,6 +59,24 @@ export default function KeyboardControl() {
     }
     debouncedUpdateColor(hex);
   };
+  useEffect(() => {
+    const fetchColor = async () => {
+      try {
+        const result = await invoke<string>("get_keybord_color_perzone");
+        console.log(result);
+        setZone1("#" + result[0]);
+        setZone2("#" + result[1]);
+        setZone3("#" + result[2]);
+        setZone4("#" + result[3]);
+        setColor("#" + result[0]);
+
+        console.log("zone one color : ", zone1);
+      } catch (error) {
+        console.error("Error getting keyboard_color:", error);
+      }
+    };
+    fetchColor();
+  }, []);
 
   const handleZoneColorChange = (zone: number, hex: string) => {
     if (tab === "all-zones") {
@@ -120,11 +138,10 @@ export default function KeyboardControl() {
                   return (
                     <div
                       key={zoneNum}
-                      className={`flex flex-col items-center gap-2 cursor-pointer p-2 rounded-lg border ${
-                        selectedZone === zoneNum
+                      className={`flex flex-col items-center gap-2 cursor-pointer p-2 rounded-lg border ${selectedZone === zoneNum
                           ? "border-blue-500"
                           : "border-transparent"
-                      }`}
+                        }`}
                       onClick={() => setSelectedZone(zoneNum)}
                     >
                       <p className="text-sm font-semibold">Zone {zoneNum}</p>

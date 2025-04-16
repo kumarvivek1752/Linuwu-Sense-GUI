@@ -2,22 +2,15 @@
 
 // use elevated_command::Command;
 // use std::process::Command;
-use std::{thread, time::Duration};
 
 mod command;
 mod utils;
 
-use crate::command::get_keybord_perzone;
-
 fn main() {
-    // thread::spawn(|| loop {
-    //     let keyboard = get_keybord_perzone();
-    //     println!("{:?}", keyboard);
-    //     thread::sleep(Duration::from_secs(1));
-    // });
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
             command::keyboard_color,
+            command::get_keybord_color_perzone,
             command::fan_control,
             command::get_fan_speed,
             command::get_backlight_timeout,
