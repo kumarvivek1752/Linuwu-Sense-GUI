@@ -48,17 +48,12 @@ const data = {
     },
     {
       title: "Backlight Timeout",
-      url: "#",
+      url: "/dashboard/backlight-timeout",
       icon: SunIcon,
     },
     {
-      title: "Battery Calibration",
-      url: "#",
-      icon: BatteryChargingIcon,
-    },
-    {
       title: "Battery Limiter",
-      url: "#",
+      url: "/dashboard/battery-limiter",
       icon: BatteryMediumIcon,
     },
     {
@@ -75,6 +70,11 @@ const data = {
       title: "USB Charging",
       url: "#",
       icon: PlugZapIcon,
+    },
+    {
+      title: "Battery Calibration",
+      url: "/dashboard/battery-calibration",
+      icon: BatteryChargingIcon,
     },
   ],
 };
